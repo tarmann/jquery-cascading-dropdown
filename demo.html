@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cascading Dropdowns</title>
+</head>
+<body>
+
+<h1>Cascading Dropdown Demo</h1>
+
+<div class="cascading-dropdown">
+	<div>
+	<select name="Segment" class="valid" data-cdd-parent="">
+		<option value="-1">Please select ...</option>
+	</select>
+	</div>
+
+	<div>
+	<select name="Family" class="valid" data-cdd-parent="Segment">
+		<option value="-1">Please select ...</option>
+	</select>
+	</div>
+
+	<div>
+	<select name="Class" class="valid" data-cdd-parent="Family">
+		<option value="-1">Please select ...</option>
+	</select>
+	</div>
+
+	<div>
+	<select name="Commodity" class="valid" data-cdd-parent="Class">
+		<option value="-1">Please select ...</option>
+	</select>
+	</div>
+</div>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="jquery-cascading-dropdown.js"></script>
+
+<script>
+$(function(){
+	// just point to the first element to be loaded
+	$('.cascading-dropdown').cascadingDropdown({ parentParam: 'ParentId' });
+});
+</script>
+
+</body>
+</html>
