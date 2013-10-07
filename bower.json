@@ -1,0 +1,26 @@
+{
+  "name": "jQuery Cascading Dropdown",
+  "main": "jquery-cascading-dropdown.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tarmann/jquery-cascading-dropdown",
+  "authors": [
+    "Bruno Tarmann <eu@tarmann.com.br>"
+  ],
+  "description": "Simple and lightweight plugin for creating cascading dropdowns.",
+  "keywords": [
+    "jquery",
+    "cascading",
+    "dropdown"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3"
+  }
+}
